@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Superuser</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="icon" href="/touch_id.png">
-</head>
-<body>
-  <h1>Superuser</h1>
-  <p>If you have MacOS and Touch ID, you scan your finger to enable <code>sudo</code> access on the terminal.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Superuser</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="/touch_id.png" />
+  </head>
+  <body>
+    <h1>Superuser</h1>
+    <p>
+      If you have MacOS and Touch ID, you scan your finger to enable
+      <code>sudo</code> access on the terminal.
+    </p>
 
-  <h2>How?</h2>
-  <p>By executing a script that you can download here.</p>
+    <h2>How?</h2>
+    <p>By executing a script that you can download here.</p>
 
-  <h3>Where is the script?</h3>
-  <p><a href="/enable_touch_id_for_sudo.sh">Here.</a></p>
+    <h3>Where is the script?</h3>
+    <p>Two ways to get it:</p>
+    <h4>🤮😹🫵 Normie way</h4>
+    <a href="/enable_touch_id_for_sudo.sh">Click to download.</a>
+    <h4>🔥🙂‍↕️🫰 The way</h4>
+    <!-- Running `sh -c "$(curl -sSL https://superuser.run/enable_touch_id_for_sudo.sh)"` -->
+    <button type="button" onclick="copyToClipboard()">
+      <pre><code>sh -c "$(curl -sSL https://superuser.run/enable_touch_id_for_sudo.sh)"</code></pre>
+    </button>
 
-  <h3>Wait, how do I know the script is safe?</h3>
-  <p>Same way you know anything: using critical thinking and common sense—or you can ask ChatGPT and forgo your last remnants of human intelligence.</p>
+    <h3>Wait, how do I know the script is safe?</h3>
+    <p>
+      Same way you know anything: using critical thinking and common sense—or
+      you can ask ChatGPT and forgo your last remnants of human intelligence.
+    </p>
 
-  <h3>Anything else?</h3>
-  <p>Uhm, feel free to <a href="http://twitter.com/asciidiego">follow me on twitter</a> if you want.</p> 
-</body>
+    <h3>Anything else?</h3>
+    <p>
+      Uhm, feel free to
+      <a href="http://twitter.com/asciidiego">follow me on twitter</a> if you
+      want.
+    </p>
+  </body>
+  <script>
+    function copyToClipboard() {
+      var command = 'sh -c "$(curl -sSL https://superuser.run/enable_touch_id_for_sudo.sh)"';
+      navigator.clipboard.writeText(command).then(function() {
+        console.log('Copying to clipboard was successful!');
+      }, function(err) {
+        console.error('Could not copy text: ', err);
+      });
+    }
+    </script>
 </html>
