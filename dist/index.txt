@@ -1,0 +1,22 @@
+ __        __   ___  __        __   ___  __
+/__` |  | |__) |__  |__) |  | /__` |__  |__)
+.__/ \__/ |    |___ |  \ \__/ .__/ |___ |  \
+=============================================
+
+Get `sudo` access using only your fingers .
+
+→ How?
+
+Running the following command:
+
+sh -c "$(curl -sSL https://superuser.run/enable_touch_id_for_sudo.sh)"
+
+→ Wait, how do I know the script is safe?
+
+Same way you know anything: using critical thinking and
+common sense—or you can ask ChatGPT and forgo your last
+remnants of human intelligence.
+
+→ Anything else?
+
+uhm-follow me on twitter? http://twitter.com/asciidiego
