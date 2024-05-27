@@ -1,0 +1,4 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "worker-orange-frog-746d"
+main = "src/index.js"
+compatibility_date = "2024-05-24"
